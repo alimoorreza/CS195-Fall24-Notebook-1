@@ -8,13 +8,11 @@
 I've provided some starter code for you. Before you go any further, click on the `notebook1_whiteing_starter.ipynb` and `notebook1_histogram_equalization_starter.ipynb` links in the repository, and then, at the top of the notebook, you will see a button that says `Open in Colab`. Click on this and it will open the starter code in Google Colaboratory.
 
 ## The Images
-For this notebook,
-The data is from Kaggle and can be found in this repository, on Blackboard, and online at 
-The data includes the following features:
+For this notebook, you will need the following two images:
 - **Image#1**: [this link](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/data/first_photograph.png).
 - **Image#2**: [this link](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/data/himalaya_dark.png).
  
-The first step is to get the images, make sure the images are uploaded on your Google Drive, and mount your Drive to the notebook. 
+First things first: upload the images to your Google Drive and then mount your Drive to the notebook.
 
 ## What you need to do :exclamation:
 <b>Notebook #1 consists of the following exercises</b> [ 1 point each ]:
