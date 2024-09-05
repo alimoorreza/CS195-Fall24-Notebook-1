@@ -1,4 +1,5 @@
-# CS195-Fall24-Notebook #1: Image whitening and histogram equalization!
+# CS195-Fall24-Notebook #1
+## Image whitening and histogram equalization!
 
 <b>Due</b>: Friday, September 13th, 2024
 
