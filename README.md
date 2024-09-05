@@ -15,17 +15,16 @@ For this notebook, you will need the following two images:
 First things first: upload the images to your Google Drive and then mount your Drive to the notebook. I aim to help everyone get familiar with the programming environment and comfortable working with pixel values in images. There will be two tasks: you'll perform various per-pixel transformations on images and observe the results.
 # **Task#1**: Whitening Transformation
 You will be adjusting the contrast of the image. Your goal is to transform the image so that the resulting image has a zero mean and unit variance. Denote the image as $I(.)$ which is a 2D array of pixel values. Its width and height are $N$ and $M$ pixels respectively. Also $I(x,y)$ denotes the pixel value at 2D location $(x,y)$.
+
 You can compute the mean and variance of the gray-scale image $I(.)$ as follows:
 
-    
-    $\mu$ = 
-    
-    \sigma^{2} = \frac{\sum_{x=1}^{N}\sum_{y=1}^{M}(I(x,y)-\mu)^2}{N*M}
+<!--$\mu$ = $\frac{\sum_{x=1}^{N}\sum_{y=1}^{M}I(x,y)}{N \times M}$
+\sigma^{2} = \frac{\sum_{x=1}^{N}\sum_{y=1}^{M}(I(x,y)-\mu)^2}{N*M}-->
 
 Now, you can transform each pixel value separately using the above two computed statistics $\mu$ (mean) and $\sigma$ (standard deviation) as follows:
-\begin{equation}
+
     I^{'}(x,y) = \frac{I(x,y)-\mu}{\sigma}
-\end{equation}
+
 
 Apply this \textit{Whitening Transformation} on the provided input image to see how it affects. The following figures show the effect of applying \textit{Whitening Transformation} on the first-ever photograph -- ``\textbf{View from Window at Le Gras}''.
 # **Task#2**: Histogram Equalization
