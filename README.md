@@ -16,9 +16,9 @@ First things first: upload the images to your Google Drive and then mount your D
 # **Task#1**: Whitening Transformation
 You will be adjusting the contrast of the image. Your goal is to transform the image so that the resulting image has a zero mean and unit variance. Denote the image as $I(.)$ which is a 2D array of pixel values. Its width and height are $N$ and $M$ pixels respectively. Also $I(x,y)$ denotes the pixel value at 2D location $(x,y)$.
 You can compute the mean and variance of the gray-scale image $I(.)$ as follows:
-\begin{equation}
-    \mu = \frac{\sum_{x=1}^{N}\sum_{y=1}^{M}I(x,y)}{N*M}
-\end{equation}
+
+    $\mu = \frac{\sum_{x=1}^{N}\sum_{y=1}^{M}I(x,y)}{N*M}$
+
 
 \begin{equation}
     \sigma^{2} = \frac{\sum_{x=1}^{N}\sum_{y=1}^{M}(I(x,y)-\mu)^2}{N*M}
