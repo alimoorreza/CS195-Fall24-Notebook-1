@@ -8,23 +8,13 @@
 I've provided some starter code for you. Before you go any further, click on the `notebook1_whiteing_starter.ipynb` and `notebook1_histogram_equalization_starter.ipynb` links in the repository, and then, at the top of the notebook, you will see a button that says `Open in Colab`. Click on this and it will open the starter code in Google Colaboratory.
 
 ## The Images
-For this notebook, we're going to enter the world of Pokemon.
-
-The data is from Kaggle and can be found in this repository, on Blackboard, and online at [this link](https://www.kaggle.com/abcsds/pokemon).
+For this notebook,
+The data is from Kaggle and can be found in this repository, on Blackboard, and online at 
 The data includes the following features:
-- **#**: ID for each pokemon
-- **Name**: Name of each pokemon
-- **Type 1**: Each pokemon has a type, which determines weakness/resistance to attacks
-- **Type 2**: Some pokemon are dual type and have 2
-- **Total**: sum of all stats that come after this, a general guide to how strong a pokemon is
-- **HP**: hit points, or health, defines how much damage a pokemon can withstand before fainting
-- **Attack**: the base modifier for normal attacks (eg. Scratch, Punch)
-- **Defense**: the base damage resistance against normal attacks
-- **SP Atk**: special attack, the base modifier for special attacks (e.g. fire blast, bubble beam)
-- **SP Def**: the base damage resistance against special attacks
- -**Speed*and *: determines which pokemon attacks first each round
+- **Image#1**: [this link](https://www.kaggle.com/abcsds/pokemon).
+- **Image#2**: [this link](https://www.kaggle.com/abcsds/pokemon).
  
-The first step is to get the data loaded and ready to go, make sure the data is in your Google Drive, and mount your Drive to the notebook. Start by printing out the first several lines of the dataset to get an idea of what the data looks like. 
+The first step is to get the images, make sure the images are uploaded on your Google Drive, and mount your Drive to the notebook. 
 
 ## What you need to do :exclamation:
 <b>Notebook #1 consists of the following exercises</b> [ 1 point each ]:
