@@ -12,7 +12,7 @@ For this notebook,
 The data is from Kaggle and can be found in this repository, on Blackboard, and online at 
 The data includes the following features:
 - **Image#1**: [this link](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/data/first_photograph.png).
-- **Image#2**: [this link](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/data/himalayas_dark.png).
+- **Image#2**: [this link](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/data/himalaya_dark.png).
  
 The first step is to get the images, make sure the images are uploaded on your Google Drive, and mount your Drive to the notebook. 
 
