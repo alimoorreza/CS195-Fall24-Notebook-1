@@ -12,7 +12,11 @@ For this notebook, you will need the following two images:
 - **Image#1**: [this link](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/data/first_photograph.png).
 - **Image#2**: [this link](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/data/himalaya_dark.png).
  
-First things first: upload the images to your Google Drive and then mount your Drive to the notebook.
+First things first: upload the images to your Google Drive and then mount your Drive to the notebook. I aim to help everyone get familiar with the programming environment and comfortable working with pixel values in images. There will be two tasks: you'll perform various per-pixel transformations on images and observe the results.
+# **Task#1**: Whitening Transformation
+
+# **Task#2**: Histogram Equalization
+
 
 ## What you need to do :exclamation:
 <b>Notebook #1 consists of the following exercises</b> [ 1 point each ]:
@@ -32,7 +36,7 @@ Use a Markup cell to put your name at the top of the file. Submit this assignmen
 I will update the following rubric with your grade after you have completed the assignment.
 ### Rubric:
 
->I'm going to write in 1's for the Points awarded, but I will update when I grade if there's something that was missed
+>
 
 | Exercise #  | Points Awarded (out of 1)  | Notes |
 | --------- | ------------------- | --------- |
