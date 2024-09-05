@@ -18,7 +18,7 @@ You will be adjusting the contrast of the image. Your goal is to transform the i
 You can compute the mean and variance of the gray-scale image $I(.)$ as follows:
 
     \[
-    \mu = \frac{\sum_{x=1}^{N}\sum_{y=1}^{M}I(x,y)}{N \times M}
+    $\mu$ = \frac{\sum_{x=1}^{N}\sum_{y=1}^{M}I(x,y)}{N \times M}
     \]
 
 
