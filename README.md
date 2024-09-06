@@ -79,7 +79,9 @@ Use the two starter notebooks to finish the implementations. Submit this assignm
 
 ## :white_check_mark: Grading: 
 I will update the following rubric with your grade after you have completed the assignment.
+
 ### Rubric:
+> *This assignment is worth 5 points. I will gladly add an extra 0.5 points if you can find another low-intensity image and enhance its brightness using your histogram equalization method!*
 
 >
 
