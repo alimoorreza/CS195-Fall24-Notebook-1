@@ -41,6 +41,7 @@ Now, count how many pixels in image $I(.)$ have the intensity value equal to $b$
 
 ## **Step 2:**
 Now you need to normalize the histogram $hist$ such that the sum of this new histogram is equal to 255. Denote this new histogram as $hist^{'}$. For each bin $b$, you can compute it as follows:
+![histogram normalization](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/histogram_equalization_eq1.png)
 
 Recall that the image width and height are $N$ and $M$ pixels respectively.
 
@@ -50,7 +51,7 @@ Compute the cumulative sum of the $hist^{'}$. Denote this histogram as $histcum^
 
 ## **Step 4:** 
 
-
+![color lookup](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/histogram_equalization_eq2.png)
 ## What you need to do :exclamation:
 <b>Notebook #1 consists of the following exercises</b> [ 1 point each ]:
 1. Print out all of the unique values for the `Type 1` column of the dataset. 
