@@ -41,7 +41,7 @@ You need to finish only the first three steps. I have provided code snippet for 
 ## **Step 1:** 
 You need to create a histogram of the intensity values in an image. The easiest way to do this is by using the Pillow Library (TIP: There’s a function called histogram() in the Pillow Library that can help). There can be up to 255 different intensity values for a grayscale image. Let’s represent the histogram as a 1D vector, where each element is denoted by $hist_{b}$, corresponding to a bin for an intensity value $b$. The value of $b$ ranges from 0 to 255.
 
-For each intensity value $b$, count how many pixels in the image $I(.)$ have that exact intensity, and place that count in the corresponding bin, $hist_{b}$. If we repeat this process for every intensity value, starting with $b = 0$ and going up to $b = 255$, we obtain the final histogram as a 1D vector: $hist$ = [$hist_{0}$, $hist_{1}$, $hist_{2}$, ..., $hist_{255}$]. Here's the histogram generated for a grayscale image:
+For each intensity value $b$, count how many pixels in the image $I(.)$ have that exact intensity, and place that count in the corresponding bin, $hist_{b}$. If we repeat this process for every intensity value, starting with $b = 0$ and going up to $b = 255$, we obtain the final histogram as a 1D vector: $hist$ = [ $hist_{0}$, $hist_{1}$, $hist_{2}$, ..., $hist_{255}$]. Here's the histogram generated for a grayscale image:
 
 ![histogram](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/histogram_example.png)
 
