@@ -45,6 +45,7 @@ For each intensity value $b$, count how many pixels in the image $I(.)$ have tha
 
 ![histogram](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/histogram_example.png)
 
+Notice in the image above that all the bin values for intensities of 120 or higher are zero. This means that no pixels in the image have an intensity greater than 120. That's why the image appears so dark—most of the pixel intensities are grouped between 0 and 120.
 
 ## **Step 2:**
 Now you need to normalize the histogram $hist$ such that the sum of this new histogram is equal to 255. Denote this new histogram as $hist^{'}$. For each bin $b$, you can compute it as follows:
