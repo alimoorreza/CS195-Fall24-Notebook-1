@@ -29,7 +29,7 @@ Now, you can transform each pixel value separately using the above two computed 
 
 Apply this *Whitening Transformation* on the provided input image to see how it affects. The following figures show the effect of applying *Whitening Transformation* on the first-ever photograph -- **Image#1**: [this link](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/data/first_photograph.png). The result should something like below:
 
-![Result task#1](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/whitening_eq2.png)
+![Result task#1](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/task1_result.png)
 
 # **Task#2**: Histogram Equalization
 
