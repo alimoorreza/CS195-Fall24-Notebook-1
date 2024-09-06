@@ -61,8 +61,6 @@ Compute the cumulative sum of the $hist^{'}$. Denote this histogram as $histcum^
 ![histogram](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/histogram_cumulative_sum.png)
 
 ## **Step 4:** 
-I've provided a code snippet for this step (see *`notebook1_histogram_equalization_starter.ipynb`*). If you correctly implement steps 1, 2, and 3, your code should brighten the darker regions of the image.
-
 Use the cumulative histogram $histcum^{}$ as a lookup table to transform the value of each pixel location as follows:
 
 ![color lookup](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/histogram_equalization_eq2.png)
@@ -70,6 +68,8 @@ Use the cumulative histogram $histcum^{}$ as a lookup table to transform the val
 where $I^{'}(x,y)$ denotes the histogram equalized image value at pixel location $(x,y)$. Apply your newly implemented *Histogram Equalization* on **Image#2**: [this link](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/data/himalaya_dark.png) to see how it affects. The following figures show the result:
 
 ![Result task#2](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/task2_result.png)
+
+> *I've provided a code snippet for this step (see `notebook1_histogram_equalization_starter.ipynb`). You do not need to write code for this step. If you correctly implement steps 1, 2, and 3, your code should brighten the darker regions of the image.*
 
 Use the two starter notebooks to finish the implementations. Submit this assignment through the CodePost link (find it on Blackboard).
 
