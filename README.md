@@ -9,8 +9,8 @@ I've provided some starter code for you. Before you go any further, click on the
 
 ## The Images
 For this notebook, you will need the following two images:
-- **Image#1**: [this link](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/data/first_photograph.png).
-- **Image#2**: [this link](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/data/himalaya_dark.png).
+- **Image#1**: [this link](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/data/first_photograph.png). *Use this for Task#1*
+- **Image#2**: [this link](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/data/himalaya_dark.png). *Use this for Task#2*
  
 First things first: upload the images to your Google Drive and then mount your Drive to the notebook. I aim to help everyone get familiar with the programming environment and comfortable working with pixel values in images. There will be two tasks: you'll perform various per-pixel transformations on images and observe the results.
 # **Task#1**: Whitening Transformation
@@ -23,8 +23,9 @@ You can compute the mean and variance of the gray-scale image $I(.)$ as follows:
 ![mean and variance equations](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/whitening_eq1.png)
 
 Now, you can transform each pixel value separately using the above two computed statistics $\mu$ (mean) and $\sigma$ (standard deviation) as follows:
-![whitening transformation](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/whitening_eq2.png)
     <!--I^{'}(x,y) = \frac{I(x,y)-\mu}{\sigma}-->
+    
+![whitening transformation](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/whitening_eq2.png)
 
 
 Apply this *Whitening Transformation* on the provided input image to see how it affects. The following figures show the effect of applying *Whitening Transformation* on the first-ever photograph -- **Image#1**: [this link](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/data/first_photograph.png). The result should something like below:
@@ -54,24 +55,11 @@ Use the cumulative histogram $histcum^{}$ as a lookup table to transform the val
 
 ![color lookup](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/histogram_equalization_eq2.png)
 
-where $I^{'}(x,y)$ denotes the histogram equalized image value at pixel location $(x,y)$. Apply your newly implemented *Histogram Equalization* on the provided input image to see how it affects. The following figures show the result on another input image called **Himalaya**:
+where $I^{'}(x,y)$ denotes the histogram equalized image value at pixel location $(x,y)$. Apply your newly implemented *Histogram Equalization* on **Image#2**: [this link](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/data/himalaya_dark.png) to see how it affects. The following figures show the result:
 
 ![Result task#2](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/task2_result.png)
 
-
-## What you need to do :exclamation:
-<b>Notebook #1 consists of the following exercises</b> [ 1 point each ]:
-1. Print out all of the unique values for the `Type 1` column of the dataset. 
-  > *Hint: I'm looking for each possible primary type to be ouput once, not a list of the primary type of each pokemon. For example, if I tossed a coin 3 times and got Heads, Tails, Heads, the unique values of the coin flip are Heads and Tails. There is a function for this.*
-2. Create a subset of data representing pokemon whose primary type is **Fire** 🔥, and the second type is **Flying** 🦅. Save this DataFrame to the variable name `fire_flying_pokemon`. Display the first 5 lines of this subset.
-3. Using `fire_flying_pokemon`, what is the median **Attack** of Fire Flying Pokemon?
-4. Create a subset with only pokemon from Generation I. Include 5 columns, the `Generation`, `Name`, `Type 1`, `Type 2`, and `Total`. 
-  - *For an extra challenge, see if you can do this in one line.*
-5. Which primary type of pokemon is the overall strongest? (not looking for philosophical debates here, I'm looking at the average of the 'Total' column, [grouped by](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.groupby.html) Type--so Fire v Water v Grass etc.). 
-6. **Do something cool**. Using the Pokemon dataset, get creative and show me something about the dataset. Use a text cell to explain what you did. 
- - *Need some help getting started here? Try asking a question about the dataset and see if you can use Python and Pandas to answer the question*
-
-Use a Markup cell to put your name at the top of the file. Submit this assignment through the CodePost link (find it on Blackboard).
+Use the two starter notebooks to finish the implementations. Submit this assignment through the CodePost link (find it on Blackboard).
 
 ## :white_check_mark: Grading: 
 I will update the following rubric with your grade after you have completed the assignment.
