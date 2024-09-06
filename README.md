@@ -36,11 +36,11 @@ Let's try another type of contrast transformation called *Histogram Equalization
 You need to finish only the first three steps. I have provided code snippet for step#4. As long as, you have correctly implemented the step#1, step#2, and step#3, your code should brighten up the dark intensity regions.
 
 ## **Step 1:** 
-you need to generate the histogram of intensity values. The simplest way to find the histogram of intensity values is to make use of the \texttt{\textbf{Pillow Library}} functionalities (HINT: There is a function called `histogram()' in Pillow). Alternatively, if you want, you could write few lines of python code and build your own histogram of intensity values. There will be at most 255 intensity values. Let's denote $hist_{b}$ is 1D vector denoting the histogram of intensity values. $b$ denotes a particular bin, and its value ranges from 0 to 255. 
-Now, count how many pixels in image $I(.)$ have the intensity value equal to $b$. Put that total count into the respective bin location, i.e., $hist_{b}$. You can do it for all the intensity values one after another, starting from $b=0$ up until $b=255$.
+You need to generate the histogram of intensity values. The simplest way to find the histogram of intensity values is to make use of the **Pillow Library** functionalities (HINT: There is a function called `histogram()' in Pillow). There will be at most 255 intensity values. Let's denote $hist_{b}$ is 1D vector denoting the histogram of intensity values. $b$ denotes a particular bin, and its value ranges from 0 to 255. Now, count how many pixels in image $I(.)$ have the intensity value equal to $b$. Put that total count into the respective bin location, i.e., $hist_{b}$. You can do it for all the intensity values one after another, starting from $b=0$ up until $b=255$.
 
 ## **Step 2:**
 Now you need to normalize the histogram $hist$ such that the sum of this new histogram is equal to 255. Denote this new histogram as $hist^{'}$. For each bin $b$, you can compute it as follows:
+
 ![histogram normalization](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/histogram_equalization_eq1.png)
 
 Recall that the image width and height are $N$ and $M$ pixels respectively.
@@ -54,7 +54,10 @@ Use the cumulative histogram $histcum^{}$ as a lookup table to transform the val
 
 ![color lookup](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/histogram_equalization_eq2.png)
 
-where $I^{'}(x,y)$ denotes the histogram equalized image value at pixel location $(x,y)$. Apply your newly implemented *Histogram Equalization* on the provided input image to see how it affects. The following figures show the result on another input image called **Himalaya**.
+where $I^{'}(x,y)$ denotes the histogram equalized image value at pixel location $(x,y)$. Apply your newly implemented *Histogram Equalization* on the provided input image to see how it affects. The following figures show the result on another input image called **Himalaya**:
+
+![Result task#2](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/task2_result.png)
+
 
 ## What you need to do :exclamation:
 <b>Notebook #1 consists of the following exercises</b> [ 1 point each ]:
