@@ -52,7 +52,9 @@ Now you need to normalize the histogram $hist$ such that the sum of this new his
 
 ![histogram normalization](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/histogram_equalization_eq1.png)
 
-Recall that the image width and height are $N$ and $M$ pixels respectively.
+Recall that the image width and height are $N$ and $M$ pixels respectively. The shape of the normalized histogram should look the same as the original histogram (as shown below). However, if you add up all the bin values in your normalized histogram, the total should be 255, since you've normalized it using the equation above.
+
+![histogram](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/histogram_normalized.png)
 
 ## **Step 3:** 
 Compute the cumulative sum of the $hist^{'}$. Denote this histogram as $histcum^{}$. Let's say you have histogram with 4 bins with the following values $[1,2,3,4]$. In this case, you have a histogram with 4 bins, and the frequency values of these bins are given such that
