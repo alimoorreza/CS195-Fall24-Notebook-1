@@ -16,12 +16,14 @@ First things first: upload the images to your Google Drive and then mount your D
 # **Task#1**: Whitening Transformation
 You will be adjusting the contrast of the image. Your goal is to transform the image so that the resulting image has a zero mean and unit variance. Denote the image as $I(.)$ which is a 2D array of pixel values. Its width and height are $N$ and $M$ pixels respectively. Also $I(x,y)$ denotes the pixel value at 2D location $(x,y)$.
 
+## **Step 1:** 
 You can compute the mean and variance of the gray-scale image $I(.)$ as follows:
 
 <!--$\mu$ = $\frac{\sum_{x=1}^{N}\sum_{y=1}^{M}I(x,y)}{N \times M}$
 \sigma^{2} = \frac{\sum_{x=1}^{N}\sum_{y=1}^{M}(I(x,y)-\mu)^2}{N*M}-->
 ![mean and variance equations](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/whitening_eq1.png)
 
+## **Step 2:** 
 Now, you can transform each pixel value separately using the above two computed statistics $\mu$ (mean) and $\sigma$ (standard deviation) as follows:
     <!--I^{'}(x,y) = \frac{I(x,y)-\mu}{\sigma}-->
     
@@ -37,7 +39,12 @@ Let's try another type of contrast transformation called *Histogram Equalization
 You need to finish only the first three steps. I have provided code snippet for step#4. As long as, you have correctly implemented the step#1, step#2, and step#3, your code should brighten up the dark intensity regions.
 
 ## **Step 1:** 
-You need to generate the histogram of intensity values. The simplest way to find the histogram of intensity values is to make use of the **Pillow Library** functionalities (HINT: There is a function called `histogram()' in Pillow). There will be at most 255 intensity values. Let's denote $hist_{b}$ is 1D vector denoting the histogram of intensity values. $b$ denotes a particular bin, and its value ranges from 0 to 255. Now, count how many pixels in image $I(.)$ have the intensity value equal to $b$. Put that total count into the respective bin location, i.e., $hist_{b}$. You can do it for all the intensity values one after another, starting from $b=0$ up until $b=255$.
+You need to create a histogram of the intensity values in an image. The easiest way to do this is by using the Pillow Library (TIP: There’s a function called histogram() in the Pillow Library that can help). There can be up to 255 different intensity values for a grayscale image. Let’s represent the histogram as a 1D vector, where each element is denoted by $hist_{b}$, corresponding to a bin for an intensity value $b$. The value of $b$ ranges from 0 to 255.
+
+For each intensity value $b$, count how many pixels in the image $I(.)$ have that exact intensity, and place that count in the corresponding bin, $hist_{b}$. If we repeat this process for every intensity value, starting with $b = 0$ and going up to $b = 255$, we obtain the final histogram as a 1D vector: $hist$ = [$hist_{0}$, $hist_{1}$, $hist_{2}$, ..., $hist_{255}$]. Here's the histogram generated for a grayscale image:
+
+![histogram](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/histogram_example.png)
+
 
 ## **Step 2:**
 Now you need to normalize the histogram $hist$ such that the sum of this new histogram is equal to 255. Denote this new histogram as $hist^{'}$. For each bin $b$, you can compute it as follows:
