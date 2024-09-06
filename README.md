@@ -67,12 +67,8 @@ I will update the following rubric with your grade after you have completed the 
 
 >
 
-| Exercise #  | Points Awarded (out of 1)  | Notes |
+| Exercise #  | Points Awarded (out of 5)  | Notes |
 | --------- | ------------------- | --------- |
-| 1: type          |    1    |    |
-| 2: fire_flying   |    1    |    | 
-| 3: Attack        |    1    |    |
-| 4: Gen 1         |    1    |    | 
-| 5: Strongest Type|    1    |    |
-| 6: Something cool|    1    |    |
-| <b>Total         |     /6 |     </b>   |
+| 1:  whitening transformation         |    -/2.5    |            |
+| 2: histogram equalization            |    -/2.5    |            | 
+| <b>Total                             |    -/5      |     </b>   |
