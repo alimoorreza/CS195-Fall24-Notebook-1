@@ -23,11 +23,14 @@ You can compute the mean and variance of the gray-scale image $I(.)$ as follows:
 ![mean and variance equations](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/whitening_eq1.png)
 
 Now, you can transform each pixel value separately using the above two computed statistics $\mu$ (mean) and $\sigma$ (standard deviation) as follows:
-
+![whitening transformation](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/whitening_eq2.png)
     <!--I^{'}(x,y) = \frac{I(x,y)-\mu}{\sigma}-->
 
 
-Apply this \textit{Whitening Transformation} on the provided input image to see how it affects. The following figures show the effect of applying \textit{Whitening Transformation} on the first-ever photograph -- ``\textbf{View from Window at Le Gras}''.
+Apply this *Whitening Transformation* on the provided input image to see how it affects. The following figures show the effect of applying *Whitening Transformation* on the first-ever photograph -- **Image#1**: [this link](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/data/first_photograph.png). The result should something like below:
+
+![Result task#1](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/whitening_eq2.png)
+
 # **Task#2**: Histogram Equalization
 
 
