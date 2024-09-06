@@ -32,6 +32,23 @@ Apply this *Whitening Transformation* on the provided input image to see how it 
 ![Result task#1](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/task1_result.png)
 
 # **Task#2**: Histogram Equalization
+Let's try another type of contrast transformation called *Histogram Equalization* on the input image. You may need to do it in multiple steps.
+You need to finish only the first three steps. I have provided code snippet for step#4. As long as, you have correctly implemented the step#1, step#2, and step#3, your code should brighten up the dark intensity regions.
+
+## **Step 1:** 
+you need to generate the histogram of intensity values. The simplest way to find the histogram of intensity values is to make use of the \texttt{\textbf{Pillow Library}} functionalities (HINT: There is a function called `histogram()' in Pillow). Alternatively, if you want, you could write few lines of python code and build your own histogram of intensity values. There will be at most 255 intensity values. Let's denote $hist_{b}$ is 1D vector denoting the histogram of intensity values. $b$ denotes a particular bin, and its value ranges from 0 to 255. 
+Now, count how many pixels in image $I(.)$ have the intensity value equal to $b$. Put that total count into the respective bin location, i.e., $hist_{b}$. You can do it for all the intensity values one after another, starting from $b=0$ up until $b=255$.
+
+## **Step 2:**
+Now you need to normalize the histogram $hist$ such that the sum of this new histogram is equal to 255. Denote this new histogram as $hist^{'}$. For each bin $b$, you can compute it as follows:
+
+Recall that the image width and height are $N$ and $M$ pixels respectively.
+
+## **Step 3:** 
+Compute the cumulative sum of the $hist^{'}$. Denote this histogram as $histcum^{}$. Let's say you have histogram with 4 bins with the following values $[1,2,3,4]$. In this case, you have a histogram with 4 bins, and the frequency values of these bins are given such that
+*the first bin contains 1*, *the second bin contains 2*, *the third bin contains 3*, and *the fourth bin contains 4*. The cumulative sum involves progressively adding the values of the histogram bins as you move from the first bin to the last. Essentially, each entry in the cumulative sum array represents the sum of all previous bins' values plus the current bin's value. Cumulative sum of this histogram would be $[1,3,6,10]$
+
+## **Step 4:** 
 
 
 ## What you need to do :exclamation:
