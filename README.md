@@ -10,7 +10,7 @@ I've provided some starter code for you. Before you go any further, click on the
 ## The Images
 For this notebook, you will need the following two images:
 - **Image#1**: [this link](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/data/first_photograph.png). *Use this for Task#1*
-- **Image#2**: [this link](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/data/himalaya_dark.png). *Use this for Task#2*
+- **Image#2**: [this link](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/data/himalaya_dark.jpg). *Use this for Task#2*
  
 First things first: upload the images to your Google Drive and then mount your Drive to the notebook. I aim to help everyone get familiar with the programming environment and comfortable working with pixel values in images. There will be two tasks: you'll perform various per-pixel transformations on images and observe the results.
 # **Task#1**: Whitening Transformation
@@ -36,7 +36,7 @@ Apply this *Whitening Transformation* on the provided input image to see how it 
 
 # **Task#2**: Histogram Equalization
 Let’s try a different contrast transformation called Histogram Equalization on the input image. This process involves multiple steps. You only need to complete the first three steps. I've provided a code snippet for step #4. If you correctly implement steps 1, 2, and 3, your code should brighten the darker regions of the image. 
-Once you finish the steps, apply your code on **Image#2**: [this link](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/data/himalaya_dark.png) to observe its impact. 
+Once you finish the steps, apply your code on **Image#2**: [this link](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/data/himalaya_dark.jpg) to observe its impact. 
 
 ## **Step 1:** 
 You need to create a histogram of the intensity values in an image. The easiest way to do this is by using the Pillow Library (TIP: There’s a function called histogram() in the Pillow Library that can help). There can be up to 255 different intensity values for a grayscale image. Let’s represent the histogram as a 1D vector, where each element is denoted by $hist_{b}$, corresponding to a bin for an intensity value $b$. The value of $b$ ranges from 0 to 255.
