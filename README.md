@@ -20,10 +20,11 @@ You can compute the mean and variance of the gray-scale image $I(.)$ as follows:
 
 <!--$\mu$ = $\frac{\sum_{x=1}^{N}\sum_{y=1}^{M}I(x,y)}{N \times M}$
 \sigma^{2} = \frac{\sum_{x=1}^{N}\sum_{y=1}^{M}(I(x,y)-\mu)^2}{N*M}-->
+![mean and variance equations](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/whitening_eq1.png)
 
 Now, you can transform each pixel value separately using the above two computed statistics $\mu$ (mean) and $\sigma$ (standard deviation) as follows:
 
-    I^{'}(x,y) = \frac{I(x,y)-\mu}{\sigma}
+    <!--I^{'}(x,y) = \frac{I(x,y)-\mu}{\sigma}-->
 
 
 Apply this \textit{Whitening Transformation} on the provided input image to see how it affects. The following figures show the effect of applying \textit{Whitening Transformation} on the first-ever photograph -- ``\textbf{View from Window at Le Gras}''.
