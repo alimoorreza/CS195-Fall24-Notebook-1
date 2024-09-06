@@ -50,8 +50,12 @@ Compute the cumulative sum of the $hist^{'}$. Denote this histogram as $histcum^
 *the first bin contains 1*, *the second bin contains 2*, *the third bin contains 3*, and *the fourth bin contains 4*. The cumulative sum involves progressively adding the values of the histogram bins as you move from the first bin to the last. Essentially, each entry in the cumulative sum array represents the sum of all previous bins' values plus the current bin's value. Cumulative sum of this histogram would be $[1,3,6,10]$
 
 ## **Step 4:** 
+Use the cumulative histogram $histcum^{}$ as a lookup table to transform the value of each pixel location as follows:
 
 ![color lookup](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/histogram_equalization_eq2.png)
+
+where $I^{'}(x,y)$ denotes the histogram equalized image value at pixel location $(x,y)$. Apply your newly implemented *Histogram Equalization* on the provided input image to see how it affects. The following figures show the result on another input image called **Himalaya**.
+
 ## What you need to do :exclamation:
 <b>Notebook #1 consists of the following exercises</b> [ 1 point each ]:
 1. Print out all of the unique values for the `Type 1` column of the dataset. 
