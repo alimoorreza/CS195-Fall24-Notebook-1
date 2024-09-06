@@ -35,9 +35,7 @@ Apply this *Whitening Transformation* on the provided input image to see how it 
 ![Result task#1](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/task1_result.png)
 
 # **Task#2**: Histogram Equalization
-Let's try another type of contrast transformation called *Histogram Equalization* on the input image. You may need to do it in multiple steps.
-You need to finish only the first three steps. I have provided code snippet for step#4. As long as, you have correctly implemented the step#1, step#2, and step#3, your code should brighten up the dark intensity regions.
-
+Let’s try a different contrast transformation called Histogram Equalization on the input image. This process involves multiple steps. You only need to complete the first three steps. I've provided a code snippet for step #4. If you correctly implement steps 1, 2, and 3, your code should brighten the darker regions of the image.
 ## **Step 1:** 
 You need to create a histogram of the intensity values in an image. The easiest way to do this is by using the Pillow Library (TIP: There’s a function called histogram() in the Pillow Library that can help). There can be up to 255 different intensity values for a grayscale image. Let’s represent the histogram as a 1D vector, where each element is denoted by $hist_{b}$, corresponding to a bin for an intensity value $b$. The value of $b$ ranges from 0 to 255.
 
@@ -61,6 +59,8 @@ Compute the cumulative sum of the $hist^{'}$. Denote this histogram as $histcum^
 *the first bin contains 1*, *the second bin contains 2*, *the third bin contains 3*, and *the fourth bin contains 4*. The cumulative sum involves progressively adding the values of the histogram bins as you move from the first bin to the last. Essentially, each entry in the cumulative sum array represents the sum of all previous bins' values plus the current bin's value. Cumulative sum of this histogram would be $[1,3,6,10]$
 
 ## **Step 4:** 
+I've provided a code snippet for this step (see *`notebook1_histogram_equalization_starter.ipynb`*). If you correctly implement steps 1, 2, and 3, your code should brighten the darker regions of the image.
+
 Use the cumulative histogram $histcum^{}$ as a lookup table to transform the value of each pixel location as follows:
 
 ![color lookup](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/histogram_equalization_eq2.png)
