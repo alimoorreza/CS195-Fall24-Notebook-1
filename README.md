@@ -35,7 +35,9 @@ Apply this *Whitening Transformation* on the provided input image to see how it 
 ![Result task#1](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/task1_result.png)
 
 # **Task#2**: Histogram Equalization
-Let’s try a different contrast transformation called Histogram Equalization on the input image. This process involves multiple steps. You only need to complete the first three steps. I've provided a code snippet for step #4. If you correctly implement steps 1, 2, and 3, your code should brighten the darker regions of the image.
+Let’s try a different contrast transformation called Histogram Equalization on the input image. This process involves multiple steps. You only need to complete the first three steps. I've provided a code snippet for step #4. If you correctly implement steps 1, 2, and 3, your code should brighten the darker regions of the image. 
+Once you finish the steps, apply your code on **Image#2**: [this link](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/data/himalaya_dark.png) to observe its impact on the **Himalaya image**. 
+
 ## **Step 1:** 
 You need to create a histogram of the intensity values in an image. The easiest way to do this is by using the Pillow Library (TIP: There’s a function called histogram() in the Pillow Library that can help). There can be up to 255 different intensity values for a grayscale image. Let’s represent the histogram as a 1D vector, where each element is denoted by $hist_{b}$, corresponding to a bin for an intensity value $b$. The value of $b$ ranges from 0 to 255.
 
@@ -65,7 +67,9 @@ Use the cumulative histogram $histcum^{}$ as a lookup table to transform the val
 
 ![color lookup](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/histogram_equalization_eq2.png)
 
-where $I^{'}(x,y)$ denotes the histogram equalized image value at pixel location $(x,y)$. Apply your newly implemented *Histogram Equalization* on **Image#2**: [this link](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/data/himalaya_dark.png) to see how it affects. The following figures show the result:
+where $I^{'}(x,y)$ denotes the histogram equalized image value at pixel location $(x,y)$. 
+
+Apply your *Histogram Equalization* implementation on **Image#2**: [this link](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/data/himalaya_dark.png) to observe its impact on the **Himalaya image**. The following figures show the result:
 
 ![Result task#2](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/task2_result.png)
 
