@@ -56,7 +56,9 @@ Recall that the image width and height are $N$ and $M$ pixels respectively. The 
 
 ## **Step 3:** 
 Compute the cumulative sum of the $hist^{'}$. Denote this histogram as $histcum^{}$. Let's say you have histogram with 4 bins with the following values $[1,2,3,4]$. In this case, you have a histogram with 4 bins, and the frequency values of these bins are given such that
-*the first bin contains 1*, *the second bin contains 2*, *the third bin contains 3*, and *the fourth bin contains 4*. The cumulative sum involves progressively adding the values of the histogram bins as you move from the first bin to the last. Essentially, each entry in the cumulative sum array represents the sum of all previous bins' values plus the current bin's value. Cumulative sum of this histogram would be $[1,3,6,10]$
+*the first bin contains 1*, *the second bin contains 2*, *the third bin contains 3*, and *the fourth bin contains 4*. The cumulative sum involves progressively adding the values of the histogram bins as you move from the first bin to the last. Essentially, each entry in the cumulative sum array represents the sum of all previous bins' values plus the current bin's value. Cumulative sum of this histogram would be $[1,3,6,10]$. If you correctly compute cumulative sum of the $hist^{'}$ they result should look something like this:
+
+![histogram](https://github.com/alimoorreza/CS195-Fall24-Notebook-1/blob/main/etc/histogram_cumulative_sum.png)
 
 ## **Step 4:** 
 I've provided a code snippet for this step (see *`notebook1_histogram_equalization_starter.ipynb`*). If you correctly implement steps 1, 2, and 3, your code should brighten the darker regions of the image.
